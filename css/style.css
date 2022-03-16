@@ -1,0 +1,491 @@
+/* 노멀라이징 */
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+ul , li{
+    list-style: none;
+}
+
+p , a{
+    text-decoration: none;
+    color:inherit ;
+}
+
+img{
+    display: block;
+}
+
+p{
+    font-family: GmarketSans;
+}
+
+h1{
+    font-family: GmarketSans;
+}
+
+/* 라이브러리 */
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell{
+    float: left;
+}
+
+.cell-r{
+    float: right;
+}
+
+.con{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Jalnan";
+    src: url(../font/Jalnan.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "NotoSansKR-bold";
+    src: url(../font/NotoSansKR-Bold.otf);
+}
+
+@font-face {
+    font-family: "NotoSansKR-Regular";
+    src: url(../font/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+    font-family: "GmarketSans";
+    src: url(../font/GmarketSansTTFMedium.ttf);
+}
+
+
+
+
+
+/* 섹션1 */
+
+.section01{
+    width: 1920px;
+    padding-bottom: 56.25%;
+    background-image: url(../img/section01-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.section01 > .left{
+    width: 50%;
+    height: 60.18%;
+    box-sizing: border-box;
+    /* padding-left: 200px; */
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.section01 > .left > h1{
+    font-family: Jalnan;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section01 > .left > .btn{
+    width: 210px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FE8449;
+    font-family: jalnan;
+    background-color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 60px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.section01 > .left > .btn:hover{
+    border:2px solid #fff;
+    color: #fff;
+    background-color: #FE8449;
+}
+
+.section01 > .right{
+    width: 45%;
+    height: 60.18%;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-top: 60px;
+    position: absolute;
+    right: 100px;
+    top: 10%;
+}
+
+.section01 > .right > .img-box{
+    width: 35%;
+    position: absolute;
+}
+
+.section01 > .right > .img-box > img{
+    width: 100%;
+}
+
+.section01 > .right > .img01{
+    z-index: 100;
+}
+
+.section01 > .right > .img02.active{
+    transition: 1.5s;
+    transform: translateX(70%) rotate(30deg);
+    transition-delay: 1s;
+}
+
+.section01 > .bottom{
+    width: 100%;
+    height: 39%;
+    position: absolute;
+    bottom: 0;
+}
+
+.section01 > .bottom > .txt{
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+.section01 > .bottom > .txt > .logo{
+    width: 78px;
+}
+
+.section01 > .bottom > .txt > .logo > img{
+    width: 100%;
+}
+
+.section01 > .bottom > .txt > p{
+    font-size: 16px;
+    line-height: 35px;
+    margin-left: 20px;
+}
+
+
+
+/* 섹션2 */
+.section02{
+    margin-top: 120px;
+}
+
+.section02 > .title{
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.section02 > .title > h1{
+    font-size: 200px;
+    color:#FE8449;
+}
+
+.section02 .content > .txt-box{
+    width: 100%;
+    background-color: #F0F0F0;
+    border-radius: 26px;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.section02 .content > .txt-box > h1{
+    width: 30%;
+    line-height: 60px;
+}
+
+.section02 .content > .txt-box > p{
+    line-height: 30px;
+}
+
+.section02 .content > .content-box{
+    width: 100%;
+    margin-top: 65px;
+}
+
+.section02 .content > .content-box > .left{
+    width: 50%;
+}
+
+.section02 .content > .content-box > .left > .img-box{
+    width: 285px;
+    margin-right: 65px;
+    position: relative;
+}
+
+.section02 .content > .content-box > .left > .img-box > img{
+    width: 100%;
+}
+
+.section02 .content > .content-box > .left > .img-box > .overlay{
+    width: 165%;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+}
+
+.section02 .content > .content-box > .left > .img-box > .overlay > img{
+    width: 100%;
+}
+
+.section02 .content > .content-box > .right{
+    width: 50%;
+    height: 500px;
+}
+
+.section02 .content > .content-box > .right > .txt01{
+    margin-left: 130px;
+    margin-top: 130px;
+}
+
+.section02 .content > .content-box > .right > .txt02{
+    margin-left: 130px;
+    margin-top: 130px;
+}
+
+.section02 .content > .content-box > .right > .txt03{
+    margin-left: 130px;
+    margin-top: 120px;
+}
+
+.section02 .content > .target-txt{
+    margin-top: 100px;
+}
+
+.section02 .content > .target-img > .left > .img-box > .overlay{
+    width: 165%;
+    height: 100%;
+    position: absolute;
+    left: -22px;
+    top: -41px;
+}
+
+.section02 .content > .target-img > .right > .txt01{
+    margin-left: 110px;
+    margin-top: 15px;
+}
+
+.section02 .content > .target-img > .right > .txt02{
+    margin-left: 110px;
+    margin-top: 100px;
+}
+
+.section02 .content > .target-img > .right > .txt03{
+    margin-left: 110px;
+    margin-top: 130px;
+}
+
+.section02 .content > .target-img > .right > .txt04{
+    margin-left: 110px;
+    margin-top: 60px;
+}
+
+
+
+
+/* 섹션3 */
+.section03{
+    margin-top: 320px;
+}
+
+.section03 > .title{
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+.section03 > .title > h1{
+    font-size: 200px;
+    color:#4BA32F;
+}
+
+.section03 .content > .txt-box{
+    width: 100%;
+    background-color: #F0F0F0;
+    border-radius: 26px;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.section03 .content > .txt-box > h1{
+    width: 30%;
+    line-height: 60px;
+}
+
+.section03 .content > .txt-box > p{
+    line-height: 30px;
+}
+
+.section03 .content > .img-box{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 240px 40px;
+}
+
+.section03 .content > .img-box > .color-img{
+    width: 200px;
+    line-height: 200px;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.section03 .content > .img-box > .color-img::after{
+    width: 200px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    transform: translateX(-50%);
+    font-family: jalnan;
+    font-size: 18px;
+    color: #000;
+}
+
+.section03 .content > .img-box > .color-img > h3{
+    font-family: jalnan;
+    font-size: 50px;
+}
+
+.section03 .content > .img-box > .color-img01{
+    background-color: #FF6A26;
+}
+
+.section03 .content > .img-box > .color-img01::after{
+    content: "#FF6A26";
+}
+
+.section03 .content > .img-box > .color-img02{
+    background-color: #7B3597;
+}
+
+.section03 .content > .img-box > .color-img02::after{
+    content: "#7B3597";
+}
+
+.section03 .content > .img-box > .color-img03{
+    background-color: #9DC94B;
+}
+
+.section03 .content > .img-box > .color-img03::after{
+    content: "#9DC94B";
+}
+
+
+
+
+
+
+.section03 .content > .img-box > .typo-img{
+    width: 120px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.section03 .content > .img-box > .typo-img > h3{
+    font-size: 70px;
+}
+.section03 .content > .img-box > .typo-img > p{
+    font-size: 30px;
+}
+
+.section03 .content > .img-box > .typo-img01{
+    font-family: jalnan;
+}
+
+.section03 .content > .img-box > .typo-img02{
+    font-family: NotoSansKR-bold;
+}
+
+.section03 .content > .img-box > .typo-img03{
+    font-family: Montserrat;
+}
+
+.section03 .content > .img-box > .typo-img > h4{
+    font-family: GmarketSans;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+
+
+/* 섹션4 */
+.section04{
+    width: 100%;
+    margin-top: 220px;
+}
+
+.section04 > .title{
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.section04 > .title > h1{
+    font-size: 200px;
+    color:#7B3597;
+}
+
+.section04 > .inner-wrap{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 200px 0;
+    background-color: #F0F0F0;
+}
+
+.section04 > .inner-wrap > .inner > img{
+    width: 100%;
+}
+
+.section05{
+    overflow: hidden;
+}
+
+.section06{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.section06 > .text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 150px 0;
+}
+
+.section06 > .text > h1{
+    color: #FF6A26;
+}
