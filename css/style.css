@@ -474,16 +474,17 @@ h1{
 
 .section06{
     width: 100%;
+    padding: 150px 0;
     text-align: center;
     position: relative;
     top: 200px;
+    background-color: #F0F0F0;
 }
 
 .section06 > .text{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    padding: 150px 0;
 }
 
 .section06 > .text > h1{
