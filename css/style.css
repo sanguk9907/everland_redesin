@@ -19,7 +19,7 @@ img{
 }
 
 p{
-    font-family: GmarketSans;
+    font-weight: 800;
 }
 
 h1{
@@ -270,7 +270,7 @@ h1{
 
 .section02 .content > .content-box > .right > .txt03{
     margin-left: 130px;
-    margin-top: 120px;
+    margin-top: 105px;
 }
 
 .section02 .content > .target-txt{
@@ -297,7 +297,7 @@ h1{
 
 .section02 .content > .target-img > .right > .txt03{
     margin-left: 110px;
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
 .section02 .content > .target-img > .right > .txt04{
