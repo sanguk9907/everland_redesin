@@ -107,6 +107,10 @@ h1{
     top: 50%;
     transform: translateY(-50%);
 }
+.section01 > .left > h1::selection{
+    background-color: #FE8449;
+    color: #000;
+}
 
 .section01 > .left > .btn{
     width: 210px;
@@ -168,9 +172,14 @@ h1{
     bottom: 0;
 }
 
+
 .section01 > .bottom > .txt{
     margin-left: 200px;
     margin-top: 60px;
+}
+.section01 > .bottom > .txt >p::selection{
+    background-color: #FE8449;
+    color: #fff;
 }
 
 .section01 > .bottom > .txt > .logo{
@@ -489,4 +498,16 @@ h1{
 
 .section06 > .text > h1{
     color: #FF6A26;
+}
+
+.go-top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    transition: 0.3s;
 }
